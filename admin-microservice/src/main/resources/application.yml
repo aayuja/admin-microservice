@@ -1,0 +1,11 @@
+server:
+  port: 8180
+spring:
+ application:
+   name: admin-microservice
+   
+eureka:
+  client:
+    register-with-eureka: true
+    service-url:
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka/}
